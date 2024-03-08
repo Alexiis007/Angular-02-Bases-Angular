@@ -1,0 +1,41 @@
+<h1>{{name}}</h1>
+<dl>
+  <td>
+    Nombre:
+  </td>
+  <dd>{{name}}</dd>
+  <td>
+    Edad:
+  </td>
+  <dd>{{age}}</dd>
+  <td>
+    Metodo:
+  </td>
+  <!-- Los metodos se reciben con parentesis -->
+  <dd>{{getHeroDescription()}}</dd>
+  <td>
+    Capitalizado:
+  </td>
+  <!-- Los get no se reciven con parentesis -->
+  <dd>{{capitalzedName}}</dd>
+</dl>
+<!-- *ngIf si condicion true (Aparece) Si condicion false (desaparece) -->
+<button
+*ngIf="name != 'Alexis'"
+class="btn btn-primary mx-2"
+(click)="changeName()">
+  Cambiar Nombre
+</button>
+
+<button
+*ngIf="age != 20"
+class="btn btn-primary mx-2"
+(click)="changeAge()">
+  Cambiar Edad
+</button>
+
+<button
+class="btn btn-warning mx-2"
+(click)="reset()">
+    Reset
+</button>
