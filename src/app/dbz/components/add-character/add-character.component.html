@@ -1,0 +1,7 @@
+<form (ngSubmit)="emitCharacter()">
+  <h1>Agregar Personaje</h1>
+  <!-- [Manda datos de Ts a HTML / Asociacion de atributos] - (Manda datos de  HTML a Ts / eventos) -->
+  <input name="Name" type="text" [(ngModel)]="Character.name" class="form-control mb-2" placeholder="Nombre del personaje">
+  <input name="Power" type="number" [(ngModel)]="Character.power" class="form-control mb-2" placeholder="Poder">
+  <button type="submit" class="btn btn-primary">Agregar</button>
+</form>

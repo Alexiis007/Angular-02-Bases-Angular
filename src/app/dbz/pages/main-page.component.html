@@ -1,0 +1,12 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <dbz-list [CharacterList]="characters" (indiceEmitido)="eliminarPersonaje($event)"></dbz-list>
+  </div>
+  <div class="col">
+    <!-- (metodoEmisor)="MetodoReceptor($event) / $event dice que variable es la que recivira" -->
+    <dbz-add-character (onNewCharacter)="onNewCharacterMainPage($event)"></dbz-add-character>
+  </div>
+</div>
