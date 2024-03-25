@@ -9,7 +9,7 @@
     "test": "ng test",
     "build:href":"ng build --base-href ./",
     "delete:docs":"del docs",
-    "copy:dist":"copyfiles dist/bases/browser* ./docs -f",
+    "copy:dist":"copyfiles dist/bases/browser/* ./docs -f",
     "build:finalizar": "npm run delete:docs && npm run build:href && npm run copy:dist"
   },
   "private": true,
